@@ -1,10 +1,10 @@
-# 📱 Clean Architecture + BLoC — Flutter App
+# Clean Architecture + BLoC — Flutter App
 
 > Flutter-приложение построенное на принципах **Clean Architecture** с использованием **BLoC** как state manager.
 
 ---
 
-## 🏗️ Архитектура
+## Архитектура
 
 Проект разделён на 3 независимых слоя. Зависимости направлены строго внутрь: `presentation → domain ← data`.
 
@@ -45,7 +45,7 @@ lib/
 
 ---
 
-## ⚙️ Зависимости
+## Зависимости
 
 ```yaml
 flutter_bloc: ^8.1.3   # State management
@@ -56,7 +56,7 @@ get_it: ^7.6.4         # Dependency Injection
 
 ---
 
-## 🚀 Запуск
+## Запуск
 
 ```bash
 # Установить зависимости
@@ -68,7 +68,7 @@ flutter run
 
 ---
 
-## 📋 Функционал
+## Функционал
 
 | Действие | Событие | Состояние |
 |---|---|---|
@@ -79,7 +79,7 @@ flutter run
 
 ---
 
-## 🔄 BLoC: События и Состояния
+## BLoC: События и Состояния
 
 **События (`post_event.dart`)**
 ```dart
@@ -105,7 +105,7 @@ class PostNavigateToDetailState extends PostLoadedState { final Post selectedPos
 
 ---
 
-## 🧩 Слои архитектуры
+## Слои архитектуры
 
 ### Domain — бизнес-логика
 Чистый Dart, без зависимостей от Flutter или внешних пакетов.
@@ -126,7 +126,7 @@ class PostNavigateToDetailState extends PostLoadedState { final Post selectedPos
 
 ---
 
-## 💉 Dependency Injection
+## Dependency Injection
 
 Регистрация зависимостей через `get_it`:
 
@@ -142,7 +142,7 @@ void init() {
 
 ---
 
-## 🌐 API
+## API
 
 Данные загружаются с публичного REST API:
 
